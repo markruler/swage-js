@@ -1,8 +1,12 @@
-# Swagger JSON to Excel
+# Swage
 
 > CLI tool for converting Swagger API specification JSON to Excel
 
 ## Getting started
+
+![cli](example/cli.gif)
+
+![excel](example/excel.gif)
 
 ### Install
 
@@ -29,23 +33,15 @@ swage gen <json-path>
 
 ```bash
 swage gen example/example.json
-> output: swagger.xlsx
-
-# or
-
-swage gen example/example.json --output example
-> output: example/swagger.xlsx
+OUTPUT >>> ./swagger.xlsx
 ```
 
-### Output
+### flag `--output`, `-o`
 
-#### Index Sheet
-
-![index](example/index.png)
-
-#### API Specification Sheet
-
-![api](example/api.png)
+```bash
+swage gen example/example.json --output example
+OUTPUT >>> ./example/swagger.xlsx
+```
 
 ## Development
 
@@ -67,13 +63,13 @@ node dist/main.js gen example/example.json --output .
 ```bash
 npm run local
 # /usr/local/bin/swage -> /usr/local/lib/node_modules/swage/dist/main.js
-# + swage@0.2.1
+# + swage@0.4.0
 # added 1 package from 1 contributor in 0.667s
 ```
 
 ### Clean
 
-```
+```bash
 npm run clean
 ```
 

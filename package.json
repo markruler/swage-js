@@ -13,11 +13,12 @@
     "start": "# node --experimental-json-modules src/main.js # 'type': 'module'",
     "dist": "./dist/main.js --help",
     "local": "npm install --global .",
-    "clean": "rm -rf dist/ && npm uninstall --global ."
+    "husky": "npx husky install",
+    "clean": "rm -rf dist/ *.xlsx *.tgz && npm uninstall --global . && rm -rf node_modules/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/markruler/swage.git"
+    "url": "https://github.com/markruler/swage-js.git"
   },
   "keywords": [
     "swagger",
@@ -31,9 +32,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/markruler/swage/issues"
+    "url": "https://github.com/markruler/swage-js/issues"
   },
-  "homepage": "https://github.com/markruler/swage#readme",
+  "homepage": "https://github.com/markruler/swage-js#readme",
   "dependencies": {
     "excel4node": "^1.7.2",
     "yargs": "^16.2.0"
