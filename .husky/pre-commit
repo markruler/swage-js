@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# npx: installed 1 in 1.297s
+# > npm install --save-dev prettier
+npx prettier --write .
+npm test

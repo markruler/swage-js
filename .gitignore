@@ -1,0 +1,15 @@
+### node ###
+node_modules/
+package-lock.json
+yarn.lock
+
+### files ###
+.DS_Store
+.vscode/
+datasource/
+*.xlsx
+
+### build ###
+dist/
+package/
+*.tgz

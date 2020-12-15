@@ -1,0 +1,9 @@
+{
+  "esversion": 9,
+  "eqeqeq": true,
+  "freeze": true,
+  "immed": true,
+  "indent": 2,
+  "newcap": true,
+  "camelcase": true
+}
