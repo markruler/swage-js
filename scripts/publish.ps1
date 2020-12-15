@@ -1,14 +1,13 @@
-Write-Host "Check variables..."
-Write-Host "package.json: version"
-Write-Host "main.js: development, version"
+$ErrorActionPreference = "Stop"
 
-Write-Host "Remove $DIST_PATH"
+Write-Host "Clean..."
 Set-Variable -Name "DIST_PATH" -Value "dist/"
 Remove-Item $DIST_PATH -Force -Recurse
 Remove-Item *.tgz -Force
 
 Write-Host "Build..."
 npm run build
+npm version patch
 
 Write-Host "Package..."
 npm pack

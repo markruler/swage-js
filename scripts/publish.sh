@@ -2,12 +2,13 @@
 
 set -e
 
-echo "Check variables..."
-echo "package.json: version"
-echo "main.js: development"
+echo "Clean..."
+rm -rf dist/
+rm -f *.tgz
 
 echo "Build..."
-rm -rf dist/ && rm -f *.tgz && npm run build
+npm run build
+npm version patch
 
 echo "Package..."
 npm pack
