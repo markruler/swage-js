@@ -1,5 +1,7 @@
 # Swage
 
+> Deprecated: move to [cxsu/swage](https://github.com/cxsu/swage)
+
 > CLI tool for converting Swagger API specification JSON to Excel
 
 ## Getting started
